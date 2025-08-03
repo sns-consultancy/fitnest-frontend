@@ -1,0 +1,7 @@
+node_modules/
+public/js/.DS_Store
+public/js/*.map
+public/build/
+package-lock.json
+*.log
+.env
