@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Chat - Fitness App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    #chatContainer {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+    #messages {
+      height: 300px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    #messages .user {
+      text-align: right;
+      color: #2a9d8f;
+      margin: 5px 0;
+    }
+    #messages .bot {
+      text-align: left;
+      color: #264653;
+      margin: 5px 0;
+    }
+    #controls {
+      display: flex;
+    }
+    #controls input {
+      flex: 1;
+      padding: 8px;
+    }
+    #controls button {
+      padding: 8px 12px;
+      margin-left: 5px;
+      background: #2a9d8f;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    #controls button:hover {
+      background: #21867a;
+    }
+  </style>
+</head>
+<body>
+  <h1>Community Chat</h1>
+  <div id="chatContainer">
+    <div id="messages"></div>
+    <div id="controls">
+      <input type="text" id="userInput" placeholder="Type your message..." />
+      <button id="sendBtn">Send</button>
+    </div>
+  </div>
+  <script src="community.js"></script>
+</body>
+</html>
